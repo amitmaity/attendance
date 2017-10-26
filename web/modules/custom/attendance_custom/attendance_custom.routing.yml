@@ -1,0 +1,9 @@
+
+attendance_custom.attendance_form:
+  path: '/attendance_custom/form/attendance_apply'
+  defaults:
+    _form: '\Drupal\attendance_custom\Form\AttendanceForm'
+    _title: 'Attendance'
+  requirements:
+    _access: 'TRUE'
+  

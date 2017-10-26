@@ -1,0 +1,5 @@
+name: Attendance Custom
+type: module
+description: Custom module to handle site functionalities
+core: 8.x
+package: Custom
