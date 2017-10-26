@@ -1,0 +1,9 @@
+uuid: f79492bb-ef39-4bcd-bd9a-4fe79a427f4d
+langcode: en
+status: true
+dependencies: {  }
+id: team_leader
+label: 'Team Leader'
+weight: 4
+is_admin: null
+permissions: {  }

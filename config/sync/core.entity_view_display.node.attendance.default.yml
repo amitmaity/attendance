@@ -1,0 +1,55 @@
+uuid: ff4191f3-4b10-498f-ab97-43c774737c36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.attendance.field_approved_by
+    - field.field.node.attendance.field_date
+    - field.field.node.attendance.field_status
+    - field.field.node.attendance.field_user
+    - node.type.attendance
+  module:
+    - datetime
+    - options
+    - user
+id: node.attendance.default
+targetEntityType: node
+bundle: attendance
+mode: default
+content:
+  field_approved_by:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_date:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_status:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_user:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }
