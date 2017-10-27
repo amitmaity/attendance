@@ -7,3 +7,11 @@ attendance_custom.attendance_form:
   requirements:
     _access: 'TRUE'
   
+
+attendance_custom.attendance_controller_approve_attendance:
+  path: '/attendance_custom/approve_attendance/{nid}'
+  defaults:
+    _controller: '\Drupal\attendance_custom\Controller\AttendanceController::approve_attendance'
+    _title: 'Approve Attendance'
+  requirements:
+    _permission: 'access content'
