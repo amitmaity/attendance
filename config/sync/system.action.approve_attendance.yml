@@ -1,0 +1,13 @@
+uuid: 93b9b256-d173-4605-a209-b364ba2b392c
+langcode: en
+status: true
+dependencies:
+  module:
+    - attendance_custom
+_core:
+  default_config_hash: LOThPSBxSmk4O9_eSUEaINBiQ6ZBfKbfla1XyIQJQwM
+id: approve_attendance
+label: 'Approve attendance'
+type: node
+plugin: approve_attendance
+configuration: {  }

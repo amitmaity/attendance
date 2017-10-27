@@ -1,0 +1,11 @@
+id: approve_attendance
+label: 'Approve attendance'
+status: true
+langcode: en
+type: node
+plugin: approve_attendance
+dependencies:
+  module:
+    - node
+    - attendance_custom
+

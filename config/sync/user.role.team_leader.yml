@@ -6,4 +6,9 @@ id: team_leader
 label: 'Team Leader'
 weight: 4
 is_admin: null
-permissions: {  }
+permissions:
+  - 'administer nodes'
+  - 'create attendance content'
+  - 'edit any attendance content'
+  - 'edit own attendance content'
+  - 'view attendance revisions'

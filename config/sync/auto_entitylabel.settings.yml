@@ -2,7 +2,7 @@ node_type_attendance_status: '1'
 node_type_attendance_pattern: ''
 node_type_attendance_php: 0
 submit: 'Save configuration'
-form_build_id: form-9d87aJ4R4uvp7kk2G2lQ_06q2BOxhXXMl1dB_HUdd-k
+form_build_id: form-hEAi_F72OoEciJhwsQBeAKYReagrb1NiwOYhhBUQmFw
 form_token: 2l7ldOx-x_lV9RITKm3bXj7HpzfbuHAcZZTqzudHk5Y
 form_id: auto_entitylabel_settings_form
 op: 'Save configuration'
