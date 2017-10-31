@@ -34,7 +34,7 @@ class AttendanceController extends ControllerBase {
     elseif ($approver_role[1] == 'employee'){
       $msg = 'Sorry you are not authorized to approve attendance requests';
     }
-    elseif ($approver_team != $requester_team){
+    elseif ($approver_team != $requester_team AND $approver_role[1] != "administrator"){
       $msg = 'Sorry you are not authorized to approve attendance of other team';
     }
     else{

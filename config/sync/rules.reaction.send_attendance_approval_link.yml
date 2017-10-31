@@ -1,0 +1,49 @@
+uuid: 4afbc4cf-e9e2-417c-b922-478b81df0e92
+langcode: en
+status: true
+dependencies: {  }
+id: send_attendance_approval_link
+label: 'Send Attendance Approval Link'
+events:
+  -
+    event_name: 'rules_entity_insert:node'
+description: ''
+tags:
+  - ''
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 19176634-9f34-4127-98bb-1b4cc8614978
+  conditions:
+    id: rules_and
+    uuid: b2179fa0-1c4d-48e1-b6f1-c00ed5a9e047
+    conditions:
+      -
+        id: rules_condition
+        uuid: 0d95f132-a5d4-4dc9-a57b-1f9ad5213703
+        context_values:
+          type: node
+          bundle: attendance
+        context_mapping:
+          entity: node
+        context_processors:
+          type:
+            rules_tokens: {  }
+          bundle:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        condition_id: rules_entity_is_of_bundle
+        negate: false
+  actions:
+    id: rules_action_set
+    uuid: ed79b80b-8048-47fe-be71-cb18b58f8111
+    actions:
+      -
+        id: rules_action
+        uuid: d1b7b139-9092-4b20-b2d4-350f55c99461
+        context_values: {  }
+        context_mapping:
+          entity_id: node.nid.value
+        context_processors: {  }
+        provides_mapping: {  }
+        action_id: send_approval_link_slack
